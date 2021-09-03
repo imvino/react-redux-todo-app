@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import todoReducer from './todoSlice';
+import todos from './todoSlice';
+import users from './users'
 
 export default configureStore({
 	reducer: {
-		todos: todoReducer,
+		todos: todos,
+		 user: users,
 	},
 });
